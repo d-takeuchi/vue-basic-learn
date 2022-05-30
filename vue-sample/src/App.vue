@@ -1,12 +1,12 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
-import Payment from "./components/Payment.vue";
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+// import HelloWorld from './components/HelloWorld.vue'
+import Tweet from "./components/Tweet.vue";
 </script>
 
 <template>
-  <Payment />
+  <Tweet />
 </template>
 
 <style>
@@ -16,10 +16,5 @@ import Payment from "./components/Payment.vue";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
-
-.label {
-  font-size: 80px;
 }
 </style>
