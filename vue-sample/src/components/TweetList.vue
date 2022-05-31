@@ -10,9 +10,12 @@ type Props = {
   tweets: Tweet[];
 };
 
-const deleteTweet = (id: number) => {};
+const deleteTweet = (id: number) => {
+  emit("delete-tweet", id);
+};
 
 defineProps<Props>();
+const emit = defineEmits(["delete-tweet"]);
 </script>
 <template>
   <li v-for="tweet in tweets" :key="tweet.id" class="tweet-list">
